@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRABHU | Birthday.exe 🎂</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="grid-bg"></div>
+    <div class="scanlines"></div>
+
+    <header>
+        <div class="logo">GODREX<span>.exe</span></div>
+        <div class="status">● SYSTEM ONLINE</div>
+    </header>
+
+    <main class="hero">
+
+        <p class="small-text">// SPECIAL TRANSMISSION RECEIVED</p>
+
+        <h1 class="glitch" data-text="HAPPY BIRTHDAY">
+            HAPPY BIRTHDAY
+        </h1>
+
+        <h2 class="name">PRABHU<span>!</span></h2>
+
+        <p class="subtitle">
+            Another year. Another level unlocked.
+            Welcome to your next chapter.
+        </p>
+
+        <div class="birthday-card">
+
+            <div class="card-top">
+                <span>USER PROFILE</span>
+                <span class="online">● ONLINE</span>
+            </div>
+
+            <div class="avatar">👑</div>
+
+            <h2>PRABHU</h2>
+            <p class="rank">LEGENDARY HUMAN // BEST FRIEND</p>
+
+            <div class="stats">
+                <div>
+                    <h3>∞</h3>
+                    <p>AWESOMENESS</p>
+                </div>
+
+                <div>
+                    <h3>100%</h3>
+                    <p>LOYALTY</p>
+                </div>
+
+                <div>
+                    <h3>MAX</h3>
+                    <p>VIBES</p>
+                </div>
+            </div>
+
+            <div class="progress">
+                <div class="progress-fill"></div>
+            </div>
+
+            <p class="level">LEVEL UP SUCCESSFUL ⚡</p>
+
+        </div>
+
+        <div class="cake">
+            🎂
+        </div>
+
+        <button class="surprise-btn" onclick="showSurprise()">
+            ACCESS YOUR SURPRISE ✦
+        </button>
+        <button class="memory-btn" onclick="window.location.href='memory.html'">
+     EXPLORE OUR MEMORIES
+</button>
+
+        <div id="surprise" class="surprise">
+            <h2>🚀 SYSTEM MESSAGE UNLOCKED</h2>
+
+            <p>
+                HAPPY BIRTHDAY, PRABHU! ❤️
+                <br><br>
+                You're not just a friend, you're family.
+                Thanks for all the crazy memories, endless laughs,
+                and unforgettable moments.
+                <br><br>
+                May your future be brighter than every neon
+                light in this cyberpunk city.
+                Keep shining, keep winning, and never stop
+                being the legend you are!
+                <br><br>
+                Here's to more adventures together.
+                <br><br>
+                <strong>YOUR BEST FRIEND FOREVER. 💜</strong>
+            </p>
+
+            <div class="heart">💜</div>
+        </div>
+
+        <p class="footer-text">
+            MADE WITH ❤️ FOR PRABHU
+            <br>
+            © 2026 | BIRTHDAY PROTOCOL ACTIVATED
+        </p>
+
+    </main>
+
+    <script>
+        function showSurprise() {
+            const surprise = document.getElementById("surprise");
+
+            surprise.classList.toggle("show");
+
+            if (surprise.classList.contains("show")) {
+                document.querySelector(".surprise-btn").innerText =
+                    "CLOSE SURPRISE ✕";
+            } else {
+                document.querySelector(".surprise-btn").innerText =
+                    "ACCESS YOUR SURPRISE ✦";
+            }
+        }
+
+        // Floating cyber particles
+        for (let i = 0; i < 35; i++) {
+            const particle = document.createElement("div");
+            particle.className = "particle";
+
+            particle.style.left = Math.random() * 100 + "vw";
+            particle.style.animationDuration =
+                (Math.random() * 5 + 5) + "s";
+
+            particle.style.animationDelay =
+                Math.random() * 5 + "s";
+
+            document.body.appendChild(particle);
+        }
+    </script>
+
+</body>
+</html
